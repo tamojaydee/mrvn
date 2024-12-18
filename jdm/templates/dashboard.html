@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h2>Welcome, {{ session['user'] }}</h2>
+    <button class="logout-btn" onclick="window.location.href='/logout';">Logout</button>
+    <h3>All Users</h3>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Full Name</th>
+            <th>Address</th>
+            <th>Contact</th>
+            <th>Actions</th>
+        </tr>
+        {% for user in users %}
+        <tr>
+            <td>{{ user[0] }}</td>
+            <td>{{ user[1] }}</td>
+            <td>{{ user[3] }}</td>
+            <td>{{ user[4] }}</td>
+            <td>{{ user[5] }}</td>
+            <td>
+                <a class="action-btn" href="{{ url_for('edit', id=user[0]) }}">Edit</a>
+                <a class="action-btn" href="{{ url_for('delete', id=user[0]) }}">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+<footer>
+    <p>&copy; 2024 User Management System</p>
+</footer>
+</html>

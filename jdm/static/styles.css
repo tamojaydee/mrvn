@@ -1,0 +1,173 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #3C1642, #086375); /* Deep Purple to Teal */
+    color: #B2FF9E; /* Light Green */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header and Titles */
+h2, h3 {
+    color: #AFFC41; /* Bright Lime */
+    margin: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 6px #1DD3B0; /* Aquamarine Shadow */
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* Forms */
+form {
+    background: #086375; /* Teal */
+    border: 2px solid #1DD3B0; /* Aquamarine */
+    border-radius: 15px;
+    padding: 25px;
+    width: 350px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #AFFC41; /* Bright Lime */
+    border-radius: 8px;
+    background: #ffffff;
+    color: #086375; /* Teal */
+}
+
+input:focus {
+    border-color: #1DD3B0; /* Aquamarine */
+    outline: none;
+    box-shadow: 0 0 5px #AFFC41;
+}
+
+button {
+    background: #AFFC41; /* Bright Lime */
+    color: #3C1642; /* Deep Purple */
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #1DD3B0; /* Aquamarine */
+    transform: scale(1.05);
+}
+
+/* Logout Button */
+.logout-btn {
+    background: #1DD3B0; /* Aquamarine */
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logout-btn:hover {
+    background: #AFFC41; /* Bright Lime */
+    transform: scale(1.1);
+}
+
+/* Links */
+a {
+    color: #AFFC41; /* Bright Lime */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #1DD3B0; /* Aquamarine */
+    text-decoration: underline;
+}
+
+/* Table Styles */
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+    background: #FFFFFF; /* White */
+    color: #086375; /* Teal */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #AFFC41; /* Bright Lime */
+}
+
+table th {
+    background: #1DD3B0; /* Aquamarine */
+    color: #FFFFFF; /* White */
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background: #B2FF9E; /* Light Green */
+}
+
+table tr:hover {
+    background: #AFFC41; /* Bright Lime */
+    color: #3C1642; /* Deep Purple */
+    transition: 0.2s ease;
+}
+
+/* Buttons in Table */
+.action-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    background: #AFFC41; /* Bright Lime */
+    color: #3C1642; /* Deep Purple */
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: 0.3s ease;
+}
+
+.action-btn:hover {
+    background: #1DD3B0; /* Aquamarine */
+    color: #FFFFFF; /* White */
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    background: #3C1642; /* Deep Purple */
+    color: #B2FF9E; /* Light Green */
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.3);
+}
